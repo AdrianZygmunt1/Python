@@ -60,3 +60,25 @@ my_string = "123"
 my_string_int = int(my_string)
 print("my_string jako int:", my_string_int) # 123
 print(type(my_string_int)) # <class 'int'>
+#round() - zaokrąglanie
+num9 = 3.14159
+num9_rounded = round(num9, 2)
+print("num9 zaokrąglone:", num9_rounded) # 3.14
+#abs() - wartość bezwzględna
+num10 = -5
+num10_abs = abs(num10)
+print("Wartość bezwzględna num10:", num10_abs) # 5
+#pow() - potęgowanie
+num11 = 2
+num12 = 3
+num11_pow = pow(num11, num12)
+print("num11 do potęgi num12:", num11_pow) # 8
+#max() - maksymalna wartość
+max_value = max(num1, num2, num3)
+print("Maksymalna wartość:", max_value) # 10
+#min() - minimalna wartość
+min_value = min(num1, num2, num3)
+print("Minimalna wartość:", min_value) # 3.14
+
+
+
