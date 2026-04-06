@@ -12,8 +12,8 @@ def caesar(text, shift, encrypt=True):
         shift = - shift
     
     shifted_alphabet = alphabet[shift:] + alphabet[:shift]
-    translation_table = str.maketrans(alphabet + alphabet.upper(), shifted_alphabet + shifted_alphabet.upper())
-    encrypted_text = text.translate(translation_table)
+    translation_table = str.maketrans(alphabet + alphabet.upper(), shifted_alphabet + shifted_alphabet.upper())#tworzenie tabeli translacji dla małych i wielkich liter
+    encrypted_text = text.translate(translation_table)#przetłumaczenie tekstu za pomocą tabeli translacji
     return encrypted_text
 
 def encrypt(text, shift):
